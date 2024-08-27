@@ -25,4 +25,10 @@ let managerName = "Michael Scott"
 let dogBreed = "Samoyed"
 let meaningOfLife = "How many roads must a man walk down?"
 
-// It's good practice to use constants rather than variables 
+// It's good practice to use constants rather than variables
+
+
+//How to create strings
+let actor = "Denzel Washington"
+let filename = "paris.jpg"
+let result = "⭐️ You win ⭐️"
