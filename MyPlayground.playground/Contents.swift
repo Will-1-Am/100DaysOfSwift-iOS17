@@ -45,3 +45,19 @@ Apple engineer
 """
 //Printing to the debug area shows that the line breaks in the multiline string are respected
 print(movie)
+
+
+//Get the number of characters in a string with the count function
+let numberOfCharacters = movie.count
+print(numberOfCharacters)  // 38
+
+//Uppercase strings with the uppercase() function
+print(result.uppercased())  // ⭐️ YOU WIN ⭐️
+
+//the hasPrefix function will check for a prefix in a string
+print(filename.hasPrefix("paris"))  //true
+print(filename.hasPrefix("rose"))  //false
+
+// hasSuffix has similar functionality
+print(filename.hasSuffix("doc"))  //false
+
