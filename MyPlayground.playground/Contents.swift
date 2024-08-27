@@ -19,3 +19,9 @@ print(playerName)
 
 playerName = "Sam"
 print(playerName)
+
+// Camel case is a common naming convention
+let managerName = "Michael Scott"
+let dogBreed = "Samoyed"
+let meaningOfLife = "How many roads must a man walk down?"
+
