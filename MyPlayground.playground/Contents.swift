@@ -32,3 +32,6 @@ let meaningOfLife = "How many roads must a man walk down?"
 let actor = "Denzel Washington"
 let filename = "paris.jpg"
 let result = "⭐️ You win ⭐️"
+
+// Include back-slashes when you need double quotes inside a string
+let quote = "Then he tapped a sign saying \"Believe\" and walked away"
