@@ -87,3 +87,15 @@ counter /= 2    // 10
 // Build in integer methods
 counter.isMultiple(of: 33)
 120.isMultiple(of: 3)
+
+
+
+// How to store decimal numbers
+// Swift store the following as a double precision floating point number
+let number = 0.1 + 0.2
+print(number)
+
+// Type safety
+let a = 1       // an integer
+let b = 2.0     // an integer masquerading as a double
+let c = a + Int(b)   // Swift will not permit this calculation unless one of the constants is cast as the other data type.
