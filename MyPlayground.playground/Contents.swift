@@ -67,3 +67,10 @@ let billion = 1000000000
 
 // Add thousandths separators
 let aBillion = 1_000_000_000
+
+// Arthimetic
+let lowerScore = score - 2
+let higherScore = score + 10
+let doubledScore = score * 2
+let squaredScore = score * score
+let halvedScore = score / 2
