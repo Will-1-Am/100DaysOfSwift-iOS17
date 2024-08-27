@@ -74,3 +74,12 @@ let higherScore = score + 10
 let doubledScore = score * 2
 let squaredScore = score * score
 let halvedScore = score / 2
+
+// Compound assignment operators
+var counter = 10
+counter += 5
+print(counter)  // 15
+
+counter *= 2    // 30
+counter -= 10   // 20
+counter /= 2    // 10
