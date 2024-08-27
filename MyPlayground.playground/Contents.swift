@@ -61,3 +61,9 @@ print(filename.hasPrefix("rose"))  //false
 // hasSuffix has similar functionality
 print(filename.hasSuffix("doc"))  //false
 
+// How to store whole numbers
+let score = 10
+let billion = 1000000000
+
+// Add thousandths separators
+let aBillion = 1_000_000_000
