@@ -83,3 +83,7 @@ print(counter)  // 15
 counter *= 2    // 30
 counter -= 10   // 20
 counter /= 2    // 10
+
+// Build in integer methods
+counter.isMultiple(of: 33)
+120.isMultiple(of: 3)
