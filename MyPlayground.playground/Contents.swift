@@ -35,3 +35,13 @@ let result = "⭐️ You win ⭐️"
 
 // Include back-slashes when you need double quotes inside a string
 let quote = "Then he tapped a sign saying \"Believe\" and walked away"
+
+
+//Triple quotes mark the beginning & end of a multiline string
+let movie = """
+A day in
+the life of an
+Apple engineer
+"""
+//Printing to the debug area shows that the line breaks in the multiline string are respected
+print(movie)
