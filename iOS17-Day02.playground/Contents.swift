@@ -38,3 +38,8 @@ let name = "Taylor"
 let age = 26  // this is an integer
 let message = "Hello, my name is \(name) and I'm \(age) years old."
 print(message)
+
+let number = 11
+let missionMessage = "Apollo " + String(number) + "landed on the moon."  // This is permissable but string interpolation is still more efficient and readable i.e. - "Apollo \(number) landed on the moon."
+
+
