@@ -29,3 +29,12 @@ let people = "Haters"
 let action = "hate"
 let lyric = people + " gonna " + action
 // + operator can be used here as well as to do addition, due to operator overloading
+
+// Using + for concatenation is wasteful and intensive
+let luggageCode = "1" + "2" + "3" + "4" + "5"
+
+// String interpolation is more efficient & allows different types to be added to the string
+let name = "Taylor"
+let age = 26  // this is an integer
+let message = "Hello, my name is \(name) and I'm \(age) years old."
+print(message)
