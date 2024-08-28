@@ -44,3 +44,8 @@ let missionMessage = "Apollo " + String(number) + "landed on the moon."  // This
 
 // Perform calcuations with string interpolation
 print("5 x 5 is \(5 * 5)")
+
+// Checkpoint 1
+let temperatureCelsius = 0
+let temperatureFahrenheit = temperatureCelsius * 9 / 5 + 32
+print("\(temperatureCelsius)℃ =  \(temperatureFahrenheit)℉")
