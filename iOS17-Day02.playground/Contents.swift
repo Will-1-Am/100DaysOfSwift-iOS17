@@ -24,3 +24,8 @@ print(isAuthenticated)
 let firstPart = "Hello"
 let secondPart = "World"
 let greeting = firstPart + secondPart
+
+let people = "Haters"
+let action = "hate"
+let lyric = people + " gonna " + action
+// + operator can be used here as well as to do addition, due to operator overloading
