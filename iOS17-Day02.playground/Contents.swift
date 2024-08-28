@@ -1,6 +1,6 @@
 import Cocoa
 
-var greeting = "Hello, playground"
+//var greeting = "Hello, playground"
 
 // Booleans store true or false
 let goodDogs = true
@@ -17,3 +17,10 @@ print(isAuthenticated)
 
 isAuthenticated = !isAuthenticated
 print(isAuthenticated)
+
+
+
+// How to join strings together
+let firstPart = "Hello"
+let secondPart = "World"
+let greeting = firstPart + secondPart
