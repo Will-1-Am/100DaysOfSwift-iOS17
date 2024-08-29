@@ -23,3 +23,20 @@ print(employee2["name"])
 // To avoid the warning a default value can be provided
 print(employee2["name", default: "Unknown"])
 
+
+//A string boolean dictionary
+let hasGraduated = [
+    "Eric": false,
+    "Maeve": true,
+    "Otis": false,
+]
+
+//An integer string dictionary
+let olympics = [
+    2012: "London",
+    2016: "Rio de Janeiro",
+    2021: "Tokyo",
+    2024: "Paris",
+]
+
+print(olympics[2012, default: "Unknown"])
