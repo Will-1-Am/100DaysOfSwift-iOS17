@@ -25,7 +25,7 @@ print(employee2["name", default: "Unknown"])
 
 
 //A string boolean dictionary
-let hasGraduated = [
+var hasGraduated = [
     "Eric": false,
     "Maeve": true,
     "Otis": false,
@@ -57,3 +57,8 @@ archEnemies["Superman"] = "Lex Luther"
 archEnemies["Batman"] = "Penguin"
 
 print(archEnemies["Batman", default: "Unknown"])
+
+// Some dictionary methods available
+print(archEnemies.count)
+hasGraduated.removeAll()
+print(hasGraduated.count)
