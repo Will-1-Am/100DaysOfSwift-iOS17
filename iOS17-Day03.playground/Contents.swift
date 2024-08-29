@@ -65,3 +65,12 @@ print(cities.sorted()) // ["Budapest", "London", "Rome", "Tokyo"]
 // NOTE: The sorted method returns new sorted array 
 
 
+//Reverse an array
+let presidents = ["Bush", "Obama", "Clinton", "Reagan"]
+let reversedPresidents = presidents.reversed()
+print(reversedPresidents)  // Swift returns a new ReversedCollectionType and appears not to have changed anything - until it is asked for a specific elemenet
+
+for president in reversedPresidents {
+    print(president)
+}
+
