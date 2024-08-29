@@ -40,3 +40,20 @@ let olympics = [
 ]
 
 print(olympics[2012, default: "Unknown"])
+
+
+//Create an empty dictionary ready to receive data
+var heights = [String: Int]()
+heights["Yao Ming"] = 229
+heights["Shaquille O'Neal"] = 216
+heights["LeBron James"] = 206
+
+//Dictionaries do not allow duplicate keys.
+//If you try to assign a value to an existing key,
+//the previous value will be overwritten
+var archEnemies = [String: String]()
+archEnemies["Batman"] = "The Joker"
+archEnemies["Superman"] = "Lex Luther"
+archEnemies["Batman"] = "Penguin"
+
+print(archEnemies["Batman", default: "Unknown"])
