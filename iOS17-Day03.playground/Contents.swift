@@ -43,6 +43,7 @@ albums.append("Stronger Than Pride")
 // Find number of items in an array
 beatles.count  //8
 
+// Remove items
 var characters = ["Lana", "Pam", "Ray", "Sterling"]
 print(characters.count) //4
 
@@ -51,3 +52,9 @@ print(characters.count) //3
 
 characters.removeAll()
 print(characters.count) //0
+
+
+// Check if array contains item
+let bondMovies = ["Casino Royale", "Spectre", "No Time to Die"]
+print(bondMovies.contains("Frozen")) //false
+
