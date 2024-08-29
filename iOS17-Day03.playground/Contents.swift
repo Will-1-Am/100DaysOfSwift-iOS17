@@ -42,3 +42,12 @@ albums.append("Stronger Than Pride")
 
 // Find number of items in an array
 beatles.count  //8
+
+var characters = ["Lana", "Pam", "Ray", "Sterling"]
+print(characters.count) //4
+
+characters.remove(at: 2)
+print(characters.count) //3
+
+characters.removeAll()
+print(characters.count) //0
