@@ -58,3 +58,10 @@ print(characters.count) //0
 let bondMovies = ["Casino Royale", "Spectre", "No Time to Die"]
 print(bondMovies.contains("Frozen")) //false
 
+
+//Sort an array
+let cities = ["London", "Tokyo", "Rome", "Budapest"]
+print(cities.sorted()) // ["Budapest", "London", "Rome", "Tokyo"]
+// NOTE: The sorted method returns new sorted array 
+
+
