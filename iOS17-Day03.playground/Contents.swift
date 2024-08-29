@@ -24,3 +24,10 @@ print(beatles)
 // The above line will result in the following error
 //Cannot convert value of type 'String' to expected argument type 'Double'
 
+
+// Create an array by specifying a type explicitly
+var scores = Array<Int>()
+scores.append(100)
+scores.append(80)
+scores.append(85)
+print(scores[1])
