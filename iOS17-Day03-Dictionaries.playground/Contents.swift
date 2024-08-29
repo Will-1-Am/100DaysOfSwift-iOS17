@@ -19,3 +19,7 @@ print(employee2["name"])
    Expression implicitly coerced from 'String?' to 'Any'
  Swift is saying that the existance of data here is entirely optional 
  */
+
+// To avoid the warning a default value can be provided
+print(employee2["name", default: "Unknown"])
+
