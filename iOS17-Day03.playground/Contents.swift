@@ -26,8 +26,16 @@ print(beatles)
 
 
 // Create an array by specifying a type explicitly
-var scores = Array<Int>()
+var scores = Array<Int>()  // Parentheses allow customisation e.g. add 1000 zeros to an array
 scores.append(100)
 scores.append(80)
 scores.append(85)
 print(scores[1])
+
+// Alternative way of creating arrays
+var albums = [String]()
+albums.append("Diamond Life")
+albums.append("Promise")
+albums.append("Stronger Than Pride")
+
+// Swift can employ type inference to determine datatype
