@@ -39,3 +39,6 @@ albums.append("Promise")
 albums.append("Stronger Than Pride")
 
 // Swift can employ type inference to determine datatype
+
+// Find number of items in an array
+beatles.count  //8
