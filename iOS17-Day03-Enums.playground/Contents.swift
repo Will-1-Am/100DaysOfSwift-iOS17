@@ -10,3 +10,7 @@ enum Weekday {
     case friday
 }
 
+var day = Weekday.monday
+day = Weekday.tuesday
+day = Weekday.friday
+print(type(of: day))
