@@ -11,3 +11,12 @@ numbers[3]
 temperatures[2]
 // NOTE: If index does not exist within the array - crashy crashy!
 
+// Add items to existing array
+beatles.append("Frank")
+print(beatles)
+
+beatles.append("Tim")
+beatles.append("Wendy")
+beatles.append("Mike")
+print(beatles)
+// NOTE: Arrays can only hold one type of data
