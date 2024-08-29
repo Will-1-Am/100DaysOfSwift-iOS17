@@ -20,3 +20,7 @@ beatles.append("Wendy")
 beatles.append("Mike")
 print(beatles)
 // NOTE: Arrays can only hold one type of data
+//temperatures.append("Chris")
+// The above line will result in the following error
+//Cannot convert value of type 'String' to expected argument type 'Double'
+
