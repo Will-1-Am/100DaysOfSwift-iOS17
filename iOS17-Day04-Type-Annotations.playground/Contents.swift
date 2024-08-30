@@ -39,3 +39,8 @@ enum UIStyle {
 var style = UIStyle.light
 // Swift knows the type of style now meaning it is not necessary to restate it when assigning a new value
 style = .dark
+
+//Checkpoint 2
+let trainers = ["Running", "Walking", "HITT", "Running", "Track"]
+let trainersSet = Set(trainers)  // Creat a set of unique items
+print("There are \(trainers.count) items in the array consisting of \(trainersSet.count) unique items.")
