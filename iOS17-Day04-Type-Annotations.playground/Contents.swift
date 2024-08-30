@@ -30,3 +30,12 @@ var soda: [String] = [String]()
 var cities: [String] = []
 //or
 var clues = [String]()
+
+
+enum UIStyle {
+    case light, dark, system
+}
+
+var style = UIStyle.light
+// Swift knows the type of style now meaning it is not necessary to restate it when assigning a new value
+style = .dark
