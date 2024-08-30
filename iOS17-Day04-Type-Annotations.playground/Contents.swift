@@ -23,3 +23,10 @@ var books: Set<String> = Set([
     "Girl, Woman, Other"
 ])
 //Type annotation is not strictly required since Swift will work out the type from the data
+
+//If an empty array was required, it could be specified as follows:
+var soda: [String] = [String]()
+//or
+var cities: [String] = []
+//or
+var clues = [String]()
