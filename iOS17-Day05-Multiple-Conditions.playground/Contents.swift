@@ -32,3 +32,12 @@ if temp > 20 {
 if temp > 20 && temp < 30 {
     print("It's a nice day.")
 }
+
+
+//The OR logical operator can be demoed as follows
+let userAge = 14
+let hasParentalConsent = true
+
+if age >= 18 || hasParentalConsent {
+    print("You can buy the game!")
+}
