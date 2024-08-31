@@ -18,3 +18,12 @@ if age >= 18 {
     print("You have to finish school.")
 }
 
+
+//Check a range of values
+let temp = 25
+
+if temp > 20 {
+    if temp < 30 {
+        print("It's a nice day.")
+    }
+}
