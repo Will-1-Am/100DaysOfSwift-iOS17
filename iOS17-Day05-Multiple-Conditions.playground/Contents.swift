@@ -10,3 +10,11 @@ if age >= 18 {
 }
 
 
+if age >= 18 {
+    print("You can vote in the next election")
+} else if age == 16 {
+    print("You can get a job.")
+} else {
+    print("You have to finish school.")
+}
+
