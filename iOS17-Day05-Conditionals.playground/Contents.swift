@@ -61,3 +61,10 @@ let name = "Taylor Swift"
 if name != "Anonymous" {
     print("Welcome, \(name)")
 }
+
+var username = "taylorswift13"
+if username == "" {
+    username = "Anonymous"
+}
+
+print("Welcome, \(username)")
