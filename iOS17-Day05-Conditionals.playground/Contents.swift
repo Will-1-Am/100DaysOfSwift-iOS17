@@ -68,3 +68,18 @@ if username == "" {
 }
 
 print("Welcome, \(username)")
+
+
+//This is another way of writing the above condition
+if username.count == 0 {
+    username = "Anonymous"
+}
+
+print("Welcome, \(username)")
+
+//And another way
+if username.isEmpty {
+    username = "Anonymous"
+}
+
+print("Welcome, \(username)")
