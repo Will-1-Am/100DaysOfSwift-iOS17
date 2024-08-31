@@ -83,3 +83,13 @@ if username.isEmpty {
 }
 
 print("Welcome, \(username)")
+
+
+//Enums can be comparable based on position??
+enum Sizes: Comparable {
+    case small, medium, large
+}
+
+let first = Sizes.small
+let second = Sizes.large
+print(first < second)
