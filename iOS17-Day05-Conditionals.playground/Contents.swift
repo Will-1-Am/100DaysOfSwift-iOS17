@@ -48,3 +48,16 @@ if numbers.count > 3 {
     numbers.remove(at: 0)
 }
 print(numbers)
+
+
+//If user is asked to enter a name and they enter nothing, return the string "Anonymous"
+//First introduce equality operator & not equal to operator
+let country = "Canada"
+if country == "Australia" {
+    print("G'Day!")
+}
+
+let name = "Taylor Swift"
+if name != "Anonymous" {
+    print("Welcome, \(name)")
+}
