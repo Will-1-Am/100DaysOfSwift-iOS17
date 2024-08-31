@@ -27,3 +27,15 @@ if percentage < 85 {
 if age >= 18 {
     print("You're eligible to vote.")
 }
+
+
+//Compare strings
+let ourName = "Dave Lister"
+let friendName = "Arnold Rimmer"
+if ourName < friendName {
+    print("It's \(ourName) vs \(friendName)")
+}
+
+if ourName > friendName {
+    print("It's \(friendName) vs \(ourName)")
+}
