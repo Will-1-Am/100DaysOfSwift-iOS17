@@ -39,3 +39,12 @@ if ourName < friendName {
 if ourName > friendName {
     print("It's \(friendName) vs \(ourName)")
 }
+
+
+//If adding an item to an array makes it contain more than three items remove the oldest one.
+var numbers = [1, 2, 3]
+numbers.append(4)
+if numbers.count > 3 {
+    numbers.remove(at: 0)
+}
+print(numbers)
