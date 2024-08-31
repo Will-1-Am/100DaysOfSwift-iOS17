@@ -27,3 +27,8 @@ if temp > 20 {
         print("It's a nice day.")
     }
 }
+
+//The above condition can be rewritten as follows:
+if temp > 20 && temp < 30 {
+    print("It's a nice day.")
+}
