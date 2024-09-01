@@ -12,3 +12,15 @@ for os in platforms {
 for i in 1...12 {
     print("5 x \(i) is \(5 * i)")
 }
+
+
+//A nested loop
+for i in 1...12 {
+    print("The \(i) times table")
+    
+    for j in 1...12 {
+        print("   \(j) x \(i) is \(j * i)")
+    }
+    
+    print()
+}
