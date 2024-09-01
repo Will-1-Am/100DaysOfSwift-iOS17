@@ -34,3 +34,12 @@ for i in 1...5 {
 for i in 1..<5 {
     print("Counting from 1 up to 5: \(i)")
 }
+
+// Replace loop variable with underscore
+var lyric = "Haters gonna"
+
+for _ in 1...5 {
+    lyric += " hate"
+}
+
+print(lyric)
