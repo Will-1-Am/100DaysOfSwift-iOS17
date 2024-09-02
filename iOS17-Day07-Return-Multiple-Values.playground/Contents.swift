@@ -27,8 +27,9 @@ print("Name: \(newUser["firstName", default: "?"]) \(newUser["lastName", default
 
 // Rewriting the code above with tuples:
 func fetchUser() -> (firstName: String, lastName: String) {
-    (firstName: "Taylor", lastName: "Swift")
+    ("Taylor", "Swift")
 }
+//Tuple names may be omitted in return statement
 
 let fetchedUser = fetchUser()
 print("Name: \(fetchedUser.firstName) \(fetchedUser.lastName)")
