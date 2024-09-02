@@ -35,3 +35,8 @@ func printTimeTables(number: Int, end: Int) {
 }
 
 printTimeTables(number: 5, end: 20)
+
+// number & end in the function definition are called parameters
+// The values assigned to those names in the call site are called arguments.
+// Arguments must be passed to the function in the order they were defined in the function.
+
