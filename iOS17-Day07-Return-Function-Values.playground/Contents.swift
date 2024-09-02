@@ -19,10 +19,7 @@ print(result)
 // - Return true if their letters are the same
 
 func compareStrings(first: String, second: String) -> Bool {
-    if first.sorted() == second.sorted() {
-        return true
-    }
-    return false
+    return first.sorted() == second.sorted()
 }
 
-compareStrings(first: "abc", second: "cabd")
+compareStrings(first: "abc", second: "cab")
