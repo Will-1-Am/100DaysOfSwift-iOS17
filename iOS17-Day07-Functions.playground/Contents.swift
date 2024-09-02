@@ -28,3 +28,10 @@ if number.isMultiple(of: 2) {
 //isMultiple(of:) is a function belonging to Integer which takes an argument without which the function would have no meaning
 
 
+func printTimeTables(number: Int) {
+    for i in 1...12 {
+        print("\(i) * \(number) is \(i * number)")
+    }
+}
+
+printTimeTables(number: 5)
