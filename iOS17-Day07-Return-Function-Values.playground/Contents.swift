@@ -31,4 +31,4 @@ func pythagoras(a: Double, b: Double) -> Double {
     sqrt(pow(a, 2) + pow(b, 2))
 }
 
-pythagorous(a: 3, b: 4)
+pythagoras(a: 3, b: 4)
