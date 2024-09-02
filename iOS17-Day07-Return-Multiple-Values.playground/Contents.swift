@@ -15,3 +15,12 @@ let user = getUser()
 print("Name: \(user[0]) \(user[1])")
 
 //This works, but not ideal - what do the indices mean and what if the array changes?
+
+func getNewUser() -> [String: String] {
+    ["firstName": "Taylor", "lastName": "Swift"]
+}
+
+let newUser = getNewUser()
+print("Name: \(newUser["firstName", default: "?"]) \(newUser["lastName", default: "?"])")
+
+// This arguably worse
