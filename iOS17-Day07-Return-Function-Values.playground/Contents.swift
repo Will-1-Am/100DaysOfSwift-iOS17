@@ -25,3 +25,10 @@ func compareStrings(first: String, second: String) -> Bool {
 compareStrings(first: "abc", second: "cab")
 
 // The return keyword may be removed when there is only one line of code in a function that will return a value
+
+
+func pythagoras(a: Double, b: Double) -> Double {
+    sqrt(pow(a, 2) + pow(b, 2))
+}
+
+pythagorous(a: 3, b: 4)
