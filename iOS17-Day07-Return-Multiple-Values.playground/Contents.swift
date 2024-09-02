@@ -24,3 +24,11 @@ let newUser = getNewUser()
 print("Name: \(newUser["firstName", default: "?"]) \(newUser["lastName", default: "?"])")
 
 // This arguably worse
+
+// Rewriting the code above with tuples:
+func fetchUser() -> (firstName: String, lastName: String) {
+    (firstName: "Taylor", lastName: "Swift")
+}
+
+let fetchedUser = fetchUser()
+print("Name: \(fetchedUser.firstName) \(fetchedUser.lastName)")
