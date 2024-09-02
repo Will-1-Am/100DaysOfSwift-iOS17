@@ -15,3 +15,16 @@ func showWelcome() {
 // To run the function, it is called by its name with open & closed parentheses
 
 showWelcome()
+
+// Another example
+let number = 139
+
+if number.isMultiple(of: 2) {
+    print("Even")
+} else {
+    print("Odd")
+}
+
+//isMultiple(of:) is a function belonging to Integer which takes an argument without which the function would have no meaning
+
+
