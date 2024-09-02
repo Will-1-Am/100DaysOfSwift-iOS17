@@ -35,3 +35,13 @@ let user3 = getUser3()
 print("Name: \(user3.firstName) \(user3.lastName)")
 
 //When names are not possible, a tuple uses numeric indices to reference values
+
+let (firstName, lastName) = getUser3()
+print("Name: \(firstName) \(lastName)")
+
+//This does the same as that defined in user3
+
+//If one or more of the tuple members is not required, substitute an underscore.
+
+//let (firstName, _) = getUser3()
+//print("Name: \(firstNamek)")
