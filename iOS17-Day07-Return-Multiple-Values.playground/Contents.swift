@@ -33,3 +33,5 @@ func fetchUser() -> (firstName: String, lastName: String) {
 
 let fetchedUser = fetchUser()
 print("Name: \(fetchedUser.firstName) \(fetchedUser.lastName)")
+
+//When names are not possible, a tuple uses numeric indices to reference values
