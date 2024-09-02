@@ -19,7 +19,9 @@ print(result)
 // - Return true if their letters are the same
 
 func compareStrings(first: String, second: String) -> Bool {
-    return first.sorted() == second.sorted()
+    first.sorted() == second.sorted()
 }
 
 compareStrings(first: "abc", second: "cab")
+
+// The return keyword may be removed when there is only one line of code in a function that will return a value
