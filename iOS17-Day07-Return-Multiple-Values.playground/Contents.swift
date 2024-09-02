@@ -16,22 +16,22 @@ print("Name: \(user[0]) \(user[1])")
 
 //This works, but not ideal - what do the indices mean and what if the array changes?
 
-func getNewUser() -> [String: String] {
+func getUser2() -> [String: String] {
     ["firstName": "Taylor", "lastName": "Swift"]
 }
 
-let newUser = getNewUser()
-print("Name: \(newUser["firstName", default: "?"]) \(newUser["lastName", default: "?"])")
+let user2 = getUser2()
+print("Name: \(user2["firstName", default: "?"]) \(user2["lastName", default: "?"])")
 
 // This arguably worse
 
 // Rewriting the code above with tuples:
-func fetchUser() -> (firstName: String, lastName: String) {
+func getUser3() -> (firstName: String, lastName: String) {
     ("Taylor", "Swift")
 }
 //Tuple names may be omitted in return statement
 
-let fetchedUser = fetchUser()
-print("Name: \(fetchedUser.firstName) \(fetchedUser.lastName)")
+let user3 = getUser3()
+print("Name: \(user3.firstName) \(user3.lastName)")
 
 //When names are not possible, a tuple uses numeric indices to reference values
