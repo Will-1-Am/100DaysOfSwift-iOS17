@@ -37,5 +37,6 @@ do {
 } catch PasswordError.obvious {
     print("I have the same combination on my luggage.")
 } catch {
-    print("There was an error.")
+    print("There was an error \(error.localizedDescription).")
+//    It's always best to add the error.localizedDescription so the user can understand what went wrong.  This is not avaiable in this instance since the error is custom to our requirements.
 }
