@@ -26,3 +26,12 @@ func hireEmployee(location: String){}
 // call to read better.
 let lyric = "I see a red door and I want it painted black."
 print(lyric.hasPrefix("I see"))
+
+
+// This function has an external parameter
+func isUppercase(string: String) -> Bool {
+    string == string.uppercased()
+}
+
+let string = "HELLO, WORLD"
+let result = isUppercase(string: string)
