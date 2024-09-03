@@ -35,3 +35,9 @@ func isUppercase(string: String) -> Bool {
 
 let string = "HELLO, WORLD"
 let result = isUppercase(string: string)
+
+func isUppercase(_ string: String) -> Bool {
+    string == string.uppercased()
+}
+
+let result2 = isUppercase(string)
