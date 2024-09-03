@@ -31,8 +31,11 @@ let string = "12345"
 
 do {
     let result = try checkPassword(string)
-//    The try keyword is a signal to say that normal code execution could end here
     print("Password rating: \(result)")
+} catch PasswordError.short {
+    print("Please use a longer password.")
+} catch PasswordError.obvious {
+    print("I have the same combination on my luggage.")
 } catch {
     print("There was an error.")
 }
