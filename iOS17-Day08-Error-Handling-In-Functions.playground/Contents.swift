@@ -50,19 +50,17 @@ enum Bounds: Error {
 
 func getIntegerSqrt(of number: Int) throws -> Int {
     if number < 1 || number > 10000 { throw Bounds.outOfBounds }
-    var squares = [Int: Int]()
+//    var squares = [Int: Int]()
     for i in 1...100 {
-        squares[i * i] = i
+        if number == i * i {
+            return i
+        }
     }
-    print(squares)
-    if squares.keys.contains(number) {
-        return squares[number]!
-    } else {
-        throw Bounds.noIntegerSquareRoot
-    }
+    throw Bounds.noIntegerSquareRoot
+//    print(squares)
 }
 
-let integer = 10
+let integer = 100000
 
 do {
     let result = try getIntegerSqrt(of: integer)
