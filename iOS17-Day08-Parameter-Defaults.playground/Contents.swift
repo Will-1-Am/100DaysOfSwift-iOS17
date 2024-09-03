@@ -16,6 +16,6 @@ printTimesTables(for: 5, end: 15)
 //Swift employs a default with the Array.removeAll() function
 var characters = ["Lana", "Pam", "Ray", "Sterling"]
 print(characters.count)
-characters.removeAll()
+characters.removeAll(keepingCapacity: true)  //keepingCapacity's default value is false
 print(characters.count)
 
