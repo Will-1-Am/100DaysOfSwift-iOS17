@@ -20,3 +20,9 @@ let rolls = rollDice(sides: 6, count: 4)
 func hireEmployee(name: String){}
 func hireEmployee(title: String){}
 func hireEmployee(location: String){}
+
+// The hasPrefix function can be called without a parameter name
+// because the external name is an underscore.  This enables the
+// call to read better.
+let lyric = "I see a red door and I want it painted black."
+print(lyric.hasPrefix("I see"))
