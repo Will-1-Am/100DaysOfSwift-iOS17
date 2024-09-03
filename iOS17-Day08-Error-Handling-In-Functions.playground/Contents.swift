@@ -40,3 +40,35 @@ do {
     print("There was an error \(error.localizedDescription).")
 //    It's always best to add the error.localizedDescription so the user can understand what went wrong.  This is not avaiable in this instance since the error is custom to our requirements.
 }
+
+
+// Checkpoint 4
+// Write a function that accepts an integer from 1 through 10000 and returns the integer square root of that number.
+enum Bounds: Error {
+    case outOfBounds, noIntegerSquareRoot
+}
+
+func getIntegerSqrt(of number: Int) throws -> Int {
+    if number < 1 || number > 10000 { throw Bounds.outOfBounds }
+    var squares = [Int: Int]()
+    for i in 1...100 {
+        squares[i * i] = i
+    }
+    print(squares)
+    if squares.keys.contains(number) {
+        return squares[number]!
+    } else {
+        throw Bounds.noIntegerSquareRoot
+    }
+}
+
+let integer = 10
+
+do {
+    let result = try getIntegerSqrt(of: integer)
+    print("The integer square root of \(integer) is \(result)")
+} catch Bounds.outOfBounds {
+    print("The number is out of bounds")
+} catch Bounds.noIntegerSquareRoot {
+    print("There is no integer square root for that number.")
+}
