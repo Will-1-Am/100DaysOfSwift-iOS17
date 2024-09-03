@@ -14,3 +14,9 @@ func rollDice(sides: Int, count: Int) -> [Int] {
 }
 
 let rolls = rollDice(sides: 6, count: 4)
+
+
+//The following are all different functions differentiated by their parameter names
+func hireEmployee(name: String){}
+func hireEmployee(title: String){}
+func hireEmployee(location: String){}
