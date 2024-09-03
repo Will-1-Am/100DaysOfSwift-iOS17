@@ -24,3 +24,15 @@ func checkPassword(_ password: String) throws -> String {
         return "Excellent"
     }
 }
+
+// Step 3 Run the code
+// Create a Do Try Catch
+let string = "12345"
+
+do {
+    let result = try checkPassword(string)
+//    The try keyword is a signal to say that normal code execution could end here
+    print("Password rating: \(result)")
+} catch {
+    print("There was an error.")
+}
