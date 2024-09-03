@@ -41,3 +41,13 @@ func isUppercase(_ string: String) -> Bool {
 }
 
 let result2 = isUppercase(string)
+
+
+//Adding an external parameter name can make the call site better to read
+func printTimesTable(for number: Int) {
+    for i in 1...12 {
+        print("\(i) x \(number) is \(i * number)")
+    }
+}
+
+printTimesTable(for: 5)  // Without the external name the call site would read like this: printTimesTable(number: 5)
