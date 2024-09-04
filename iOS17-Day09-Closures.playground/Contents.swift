@@ -16,4 +16,12 @@ let sayHello = {
 }
 
 sayHello()
-// The above is called a closure
+// The above is called a closure expression - this one is like a function that returns nothing at all
+
+
+// If we want the closure to take parameters, they have to be written inside the curly braces.
+
+let sayHello2 = { (name: String) -> String in
+    "Hi \(name)!"
+}
+
