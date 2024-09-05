@@ -46,3 +46,20 @@ let team = ["Gloria", "Suzanne", "Piper", "Tiffany", "Tasha"]
 let sortedTeam = team.sorted()
 print(sortedTeam)
 
+/*
+ Write a custom sorting function for sorted() that makes the
+ captain appear first in the list with the remaining team
+ sorted alphabetically
+ */
+func captainFirstSorted(name1: String, name2: String) -> Bool {
+// If "Suzanne" is assumed to be the team captain, and she should appear first in the list,
+    if name1 == "Suzanne" {
+        //name1 should come before name2
+        return true
+    } else if name2 == "Suzanne" {
+        //No, name1 should NOT come before name2
+        return false
+    }
+    // Otherwise do a regular sort
+    return name1 < name2
+}
