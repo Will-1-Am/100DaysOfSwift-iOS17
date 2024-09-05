@@ -7,13 +7,18 @@ let team = ["Gloria", "Suzanne", "Piper", "Tiffany", "Tasha"]
 let sortedTeam = team.sorted()
 print(sortedTeam)  // ["Gloria", "Piper", "Suzanne", "Tasha", "Tiffany"]
 
-let captainFirstTeam = team.sorted(by: { (name1: String, name2: String) -> Bool in
-    if name1 == "Suzanne" {
+
+/*
+ The sorted method demands that a function/closure supplied for a
+ custom sort, takes two strings and returns a Bool.  Since our closure fits these requirements, Swift allows this to be written:
+ */
+let captainFirstTeam = team.sorted(by: { a, b in
+    if a == "Suzanne" {
         return true
-    } else if name2 == "Suzanne" {
+    } else if b == "Suzanne" {
         return false
     }
-    return name1 < name2
+    return a < b
 })
 
 print(captainFirstTeam)  //["Suzanne", "Gloria", "Piper", "Tasha", "Tiffany"]
