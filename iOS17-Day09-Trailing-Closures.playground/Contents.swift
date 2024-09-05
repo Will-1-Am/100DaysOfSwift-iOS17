@@ -35,6 +35,8 @@ print(reverseTeam)  //["Tiffany", "Tasha", "Suzanne", "Piper", "Gloria"]
 
 //Find all the team players whose name begins with "T"
 let tOnly = team.filter { $0.hasPrefix("T") }
-print(tOnly)
+print(tOnly)  // ["Tiffany", "Tasha"]
 
-
+// Another example
+let uppercaseTeam = team.map { $0.uppercased() }
+print(uppercaseTeam)  // ["GLORIA", "SUZANNE", "PIPER", "TIFFANY", "TASHA"]
