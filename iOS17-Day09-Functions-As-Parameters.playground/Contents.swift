@@ -50,3 +50,10 @@ doImportantWork {
 } third: {
     print("This is the third work.")
 }
+
+
+// Checkpoint 5 - Filter out even numbers, then sort the remaining array in ascending order, map those to the string "is a lucky number, and finally, print the resulting array one item per line
+
+let luckyNumbers = [7, 4, 38, 21, 16, 15, 12, 33, 31, 49]
+
+luckyNumbers.filter { $0 % 2 != 0 }
