@@ -14,14 +14,16 @@ print(sortedTeam)  // ["Gloria", "Piper", "Suzanne", "Tasha", "Tiffany"]
  
  When the closure is supplied as the parameter for another function, as is the case with sorted, the wrapping parentheses may be ommitted like so.
  
+ Additionally, Swift can employ automatic naming with trailing closures allowing the parameter names to be removed entirely.
+ $0 & $1 correspond to the parameters in the order in which they should appear.
  */
-let captainFirstTeam = team.sorted { a, b in
-    if a == "Suzanne" {
+let captainFirstTeam = team.sorted {
+    if $0 == "Suzanne" {
         return true
-    } else if b == "Suzanne" {
+    } else if $1 == "Suzanne" {
         return false
     }
-    return a < b
+    return $0 < $1
 }
 
 print(captainFirstTeam)  //["Suzanne", "Gloria", "Piper", "Tasha", "Tiffany"]
