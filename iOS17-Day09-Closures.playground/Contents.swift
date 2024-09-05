@@ -51,6 +51,10 @@ print(sortedTeam)
  captain appear first in the list with the remaining team
  sorted alphabetically
  */
+
+/*
+ captainFirstSorted takes two Strings and returns a Bool meaning it can be used by the sorted Array method.
+ */
 func captainFirstSorted(name1: String, name2: String) -> Bool {
 // If "Suzanne" is assumed to be the team captain, and she should appear first in the list,
     if name1 == "Suzanne" {
@@ -63,3 +67,6 @@ func captainFirstSorted(name1: String, name2: String) -> Bool {
     // Otherwise do a regular sort
     return name1 < name2
 }
+
+let captainFirstTeam = team.sorted(by: captainFirstSorted)
+print(captainFirstTeam)
