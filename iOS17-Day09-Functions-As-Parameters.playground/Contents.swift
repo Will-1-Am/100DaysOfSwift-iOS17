@@ -21,3 +21,11 @@ let rolls = makeArray(size: 50) {
 }
 
 print(rolls)
+
+// The same functionality can be produced using a function instead of a closure
+func generateNumber() -> Int {
+    Int.random(in: 1...20)
+}
+
+let newRolls = makeArray(size: 50, using: generateNumber)
+print(newRolls)
