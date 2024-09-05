@@ -15,3 +15,9 @@ func makeArray(size: Int, using generator: () -> Int) -> [Int] {
     return numbers
 }
 
+// Call makeArray with a closure for the function argument
+let rolls = makeArray(size: 50) {
+    Int.random(in: 1...20)
+}
+
+print(rolls)
