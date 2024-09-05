@@ -28,8 +28,6 @@ let captainFirstTeam = team.sorted {
 
 print(captainFirstTeam)  //["Suzanne", "Gloria", "Piper", "Tasha", "Tiffany"]
 
-
-let reverseTeam = team.sorted {
-    return $0 > $1
-}
+// Another example - When the closure is a single line of code the return keyword canbe ommitted
+let reverseTeam = team.sorted { $0 > $1 }
 print(reverseTeam)  //["Tiffany", "Tasha", "Suzanne", "Piper", "Gloria"]
