@@ -27,3 +27,9 @@ let captainFirstTeam = team.sorted {
 }
 
 print(captainFirstTeam)  //["Suzanne", "Gloria", "Piper", "Tasha", "Tiffany"]
+
+
+let reverseTeam = team.sorted {
+    return $0 > $1
+}
+print(reverseTeam)  //["Tiffany", "Tasha", "Suzanne", "Piper", "Gloria"]
