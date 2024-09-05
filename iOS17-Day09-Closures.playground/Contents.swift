@@ -25,6 +25,7 @@ let sayHello2 = { (name: String) -> String in
     "Hi \(name)!"
 }
 
+sayHello2("Taylor")  // Parameter names are lost in closures
 
 // When a function is copied the parameter name information is lost
 func getUserData(for id: Int) -> String {
