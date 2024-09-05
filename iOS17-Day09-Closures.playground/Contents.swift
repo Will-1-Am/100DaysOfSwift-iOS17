@@ -40,3 +40,9 @@ let data: (Int) -> String = getUserData
 let user = data(1989)  // Calling the original function the "for" parameter name would be used.
 print(user)
 
+
+// Why this matters?
+let team = ["Gloria", "Suzanne", "Piper", "Tiffany", "Tasha"]
+let sortedTeam = team.sorted()
+print(sortedTeam)
+
