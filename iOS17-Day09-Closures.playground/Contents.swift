@@ -25,3 +25,17 @@ let sayHello2 = { (name: String) -> String in
     "Hi \(name)!"
 }
 
+
+// When a function is copied the parameter name information is lost
+func getUserData(for id: Int) -> String {
+    if id == 1989 {
+        return "Taylor Swift"
+    } else {
+        return "Anonymous"
+    }
+}
+
+let data: (Int) -> String = getUserData
+let user = data(1989)  // Calling the original function the "for" parameter name would be used.
+print(user)
+
