@@ -23,3 +23,20 @@ print(wings.artist)
 
 red.printSummary()
 wings.printSummary()
+
+/* All properties in structs are constant.  To mutate them, their mutating functions must be marked mutating */
+struct Employee {
+    let name: String
+    var vacationRemaining: Int
+    
+    func takeVacation(days: Int) {
+        if vacationRemaining > days {
+            vacationRemaining -= days
+            print("I'm going on holiday!")
+            print("Days remaining: \(vacationRemaining)")
+        } else {
+            print("Oops! There aren't enough days remaining.")
+        }
+    }
+    
+}
