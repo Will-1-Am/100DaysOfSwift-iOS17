@@ -40,3 +40,8 @@ struct Employee {
     }
     
 }
+
+// An instance of a struct with a mutating function needs to be created as a variable not a constant
+var archer = Employee(name: "Sterling Archer", vacationRemaining: 14)
+archer.takeVacation(days: 5)
+print(archer.vacationRemaining)
