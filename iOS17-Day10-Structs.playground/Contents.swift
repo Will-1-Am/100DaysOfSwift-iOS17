@@ -45,3 +45,8 @@ struct Employee {
 var archer = Employee(name: "Sterling Archer", vacationRemaining: 14)
 archer.takeVacation(days: 5)
 print(archer.vacationRemaining)
+
+// Initializing a struct is a lot like calling a function
+let a = 1
+let b = 2.0
+let c = Double(a) + b   // Double is a Swift struct
