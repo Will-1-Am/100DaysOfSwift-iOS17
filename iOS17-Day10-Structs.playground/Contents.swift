@@ -29,7 +29,7 @@ struct Employee {
     let name: String
     var vacationRemaining: Int
     
-    func takeVacation(days: Int) {
+    mutating func takeVacation(days: Int) {
         if vacationRemaining > days {
             vacationRemaining -= days
             print("I'm going on holiday!")
