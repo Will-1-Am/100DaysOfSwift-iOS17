@@ -7,13 +7,17 @@ import Cocoa
 
 // A struct without property observers looks like this:
 struct Game {
-    var score = 0
+    var score = 0 {
+        didSet {
+            print("Score is now \(score)")
+        }
+    }
 }
 
 var game = Game()
 game.score += 10
-print("Score is now \(game.score)")
 game.score -= 3
-print("Score is now \(game.score)")
 game.score += 1
+// There is a bug here because the score wasn't printed here.
 
+// Property observers allow us to include this functionality in the struct
