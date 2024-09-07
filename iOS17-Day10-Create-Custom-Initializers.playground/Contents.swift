@@ -17,3 +17,7 @@ struct Player {
 let player = Player(name: "Megan R")
 print(player.number)
 // The above uses the memberwise initializer - a fancy way of saying it accepts property values in the order in which they were defined.
+
+// Other methods can be called from inside the initializer, this can only be done once all the other stored properties have been assigned values.
+
+// Multiple initializers can also be used in structs.
