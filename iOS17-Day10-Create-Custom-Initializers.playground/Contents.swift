@@ -8,11 +8,12 @@ struct Player {
     let name: String
     let number: Int
     
-    init(name: String, number: Int) {
+    init(name: String) {
         self.name = name
-        self.number = number
+        number = Int.random(in: 1...99)  // Assing a random number
     }
 }
 
-let player = Player(name: "Megan R", number: 15)
+let player = Player(name: "Megan R")
+print(player.number)
 // The above uses the memberwise initializer - a fancy way of saying it accepts property values in the order in which they were defined.
