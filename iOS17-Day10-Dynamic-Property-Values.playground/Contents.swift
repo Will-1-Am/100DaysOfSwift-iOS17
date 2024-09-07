@@ -23,7 +23,12 @@ struct NewEmployee {
     var vacationTaken = 0
     
     var vacationRemaining: Int {
-        vacationAllocated - vacationTaken
+        get {
+            vacationAllocated - vacationTaken
+        }
+        set {  // allows the mutation of value held in memory
+            vacationAllocated = vacationTaken + newValue  // newValue is provided by Swift
+        }
     }
 }
 
@@ -31,5 +36,10 @@ var s_archer = NewEmployee(name: "Sterling Archer", vacationAllocated: 14)
 
 s_archer.vacationTaken += 4
 print(s_archer.vacationRemaining)
-s_archer.vacationTaken += 4
-print(s_archer.vacationRemaining)
+//s_archer.vacationTaken += 4
+//print(s_archer.vacationRemaining)
+s_archer.vacationRemaining = 5   // Set a new value for vacationRemaining
+print(s_archer.vacationAllocated)
+
+
+// A getter and a setter must be defined to allow Swift to read and write to a computed property
