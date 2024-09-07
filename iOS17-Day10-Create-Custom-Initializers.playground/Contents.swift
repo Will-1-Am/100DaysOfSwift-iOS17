@@ -7,6 +7,11 @@ import Cocoa
 struct Player {
     let name: String
     let number: Int
+    
+    init(name: String, number: Int) {
+        self.name = name
+        self.number = number
+    }
 }
 
 let player = Player(name: "Megan R", number: 15)
