@@ -41,3 +41,12 @@ if success {
 // file private - Don't let anything outside the current file use this.
 // public - Let anyone, anywhere use this.
 // private(set) - Allow reading from anywhere but only allow writing from within this struct
+
+struct Order {
+    private var id: Int
+    init(id: Int) {
+        self.id = id
+    }
+}
+
+let order = Order(id: 1)
