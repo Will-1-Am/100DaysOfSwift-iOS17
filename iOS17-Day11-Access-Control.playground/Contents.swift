@@ -2,7 +2,7 @@ import Cocoa
 
 //How to limit access to internal data using access control
 struct BankAccount {
-    var funds = 0
+    private var funds = 0
     
     mutating func deposit(amount: Int)  {
         funds += amount
@@ -30,6 +30,10 @@ if success {
 }
 
 
-account.funds -= 1000
-print(account.funds)
+//account.funds -= 1000
+//print(account.funds)
 // This allows a withdrawal of more than our available balance!!!
+
+// To prevent this, limit access to certain properties from within the struct only.
+
+
