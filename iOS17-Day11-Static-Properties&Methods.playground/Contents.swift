@@ -25,3 +25,12 @@ struct AppData {
 }
 
 AppData.homeURL
+
+struct Employee {
+    let username: String
+    let password: String
+    
+    static let example = Employee(username: "Fred", password: "f1in5+one")
+}
+
+Employee.example.self
