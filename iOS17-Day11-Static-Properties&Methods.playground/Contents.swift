@@ -18,4 +18,10 @@ print(School.studentCount)
 
 
 // Self can be used to access static properties and methods within a struct - self with a lowercase 's' is different and refers to a value only.  Self with a capital 'S' refers to a type.
+struct AppData {
+    static let version = "1.3 beta 2"
+    static let saveFilename = "settings.json"
+    static let homeURL = "http://www.hackingwithswift.com"
+}
 
+AppData.homeURL
