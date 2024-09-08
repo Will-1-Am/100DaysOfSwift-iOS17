@@ -28,3 +28,8 @@ if success {
 } else {
     print("Failed to get the money")
 }
+
+
+account.funds -= 1000
+print(account.funds)
+// This allows a withdrawal of more than our available balance!!!
