@@ -7,7 +7,9 @@ struct BankAccount {
     mutating func deposit(amount: Int)  {
         funds += amount
     }
-    
+    /**
+    The withdraw(amount:) -> Bool function updates the funds variable and returns a boolean.  After the instantiation below, the success constant is able to use the boolean in a conditional.
+     */
     mutating func withdraw(amount: Int) -> Bool {
         if funds > amount {
             funds -= amount
@@ -32,7 +34,7 @@ if success {
 
 //account.funds -= 1000
 //print(account.funds)
-// This allows a withdrawal of more than our available balance!!!
+// The ability to alter the value assigned to the funds variable of the struct instance is very dangerous in this case (for the bank...).
 
 // To prevent this, limit access to certain properties from within the struct only.
 
