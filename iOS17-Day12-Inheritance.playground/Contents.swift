@@ -22,8 +22,8 @@ class Developer: Employee {
         print("I'm a developer who will sometimes work \(hours) hours a day, but other times will spend hours arguing aboiut whether code should be indented using tabs or spaces.")
     }
 }
-
-class Manager: Employee {
+// Mark a class final when you know it will not be inherited - no child class can use a final class as a parent
+final class Manager: Employee {
     func work() {
         print("I'm going to meetings for \(hours) hours.")
     }
