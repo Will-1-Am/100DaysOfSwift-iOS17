@@ -6,6 +6,8 @@ class User {
     var name = "Paul"
 }
 
-let user = User()
+var user = User()
 user.name = "Taylor"
+print(user.name)
+user.name = "Frank"
 print(user.name)
