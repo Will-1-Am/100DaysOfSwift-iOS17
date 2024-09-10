@@ -24,4 +24,62 @@ print(user.name)
 
 // Make Persian and Lion as subclasses of Cat.
 
+class Animal {
+    var legs: Int
+    init(legs: Int) {
+        self.legs = legs
+    }
+}
 
+class Cat: Animal {
+    var isTame: Bool
+    func speak() {
+        print("meow")
+    }
+    init(legs: Int, isTame: Bool) {
+        self.isTame = isTame
+        super.init(legs: legs)
+    }
+}
+
+class Persian: Cat {
+    override func speak() {
+        print("meeeeooooowww")
+    }
+}
+
+class Lion: Cat {
+    override func speak() {
+        print("roooarrrr")
+    }
+}
+
+class Dog: Animal {
+    func speak() {
+        print("Woof")
+    }
+}
+
+class Corgi: Dog {
+    override func speak() {
+        print("rrrruff")
+    }
+}
+
+class Poodle: Dog {
+    override func speak() {
+        print("yap yap")
+    }
+}
+
+
+let poodle = Poodle(legs: 4)
+poodle.speak()
+
+let corgi = Corgi(legs: 4)
+corgi.speak()
+
+let persion = Persian(legs: 4, isTame: true)
+persion.speak()
+
+let lion = Lion(legs: 4, isTame: false)
