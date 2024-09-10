@@ -19,3 +19,8 @@ class User {
         print("User \(id): I'm dead!")
     }
 }
+
+for i in 1...3 {
+    let user = User(id: i)
+    print("User \(user.id): I'm in control!")
+}
