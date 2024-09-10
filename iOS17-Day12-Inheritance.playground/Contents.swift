@@ -9,3 +9,14 @@ class Employee {
     }
 }
 
+class Developer: Employee {
+    func work() {
+        print("I'm writing code for \(hours) hours.")
+    }
+}
+
+class Manager: Employee {
+    func work() {
+        print("I'm going to meetings for \(hours) hours.")
+    }
+}
