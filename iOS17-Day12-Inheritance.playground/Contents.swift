@@ -7,6 +7,10 @@ class Employee {
     init(hours: Int) {
         self.hours = hours
     }
+    
+    func printSummary() {
+        print("I work \(hours) hours a day.")
+    }
 }
 
 class Developer: Employee {
@@ -25,3 +29,6 @@ let robert = Developer(hours: 8)
 let joseph = Manager(hours: 10)
 robert.work()
 joseph.work()
+
+let novall = Developer(hours: 8)
+novall.printSummary()
