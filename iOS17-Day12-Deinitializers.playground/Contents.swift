@@ -20,7 +20,14 @@ class User {
     }
 }
 
+var users = [User]()
+
 for i in 1...3 {
     let user = User(id: i)
     print("User \(user.id): I'm in control!")
+    users.append(user)
 }
+
+print("Loop is finished!")
+users.removeAll()
+print("Array is clear!")
