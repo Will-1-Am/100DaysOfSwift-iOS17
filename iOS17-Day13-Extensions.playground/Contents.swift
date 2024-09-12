@@ -15,6 +15,15 @@ extension String {
     func trimmed() -> String {
         self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
+    
+    mutating func trim() {  /// mutating is required here because it applies the result to self (the current string instance)
+        self = self.trimmed()
+    }
+    
+    /// Properties added via extensions must be computed properties as they do not take up any storage
+    var lines: [String] {
+        self.components(separatedBy: .newlines)
+    }
 }
 
 let trimmed2 = quote.trimmed()
@@ -23,10 +32,5 @@ let trimmed2 = quote.trimmed()
 /// 1. Code completion;
 /// 2. Code organization;
 /// 3. Internal access;
-extension String {
-    mutating func trim() {  /// mutating is required here because it applies the result to self (the current string instance)
-        self = self.trimmed()
-    }
-}
 
 quote.trim()
