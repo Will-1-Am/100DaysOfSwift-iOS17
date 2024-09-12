@@ -12,6 +12,8 @@ func commute(distance: Int, using vehicle: Whatever) ->  {
 
 /// Protocols allow us to define a series of properties and methods to use like this:
 protocol Vehicle {
+    var name: String { get }  /// Read only or computed
+    var currentPassengers: Int { get set }  /// Must be read/write
     func estimateTime(for distance: Int) -> Int
     func travel(distance: Int)
 }
