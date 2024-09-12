@@ -21,6 +21,7 @@ extension String {
     }
     
     /// Properties added via extensions must be computed properties as they do not take up any storage
+    /// This computed property creates an array of strings where each element is appended when a newline character is detected.
     var lines: [String] {
         self.components(separatedBy: .newlines)
     }
@@ -34,3 +35,13 @@ let trimmed2 = quote.trimmed()
 /// 3. Internal access;
 
 quote.trim()
+
+
+let lyrics = """
+But I keep cruising
+Can't stop, won't stop moving
+It's like I got this music in my mind
+Saying it's gonna be alright
+"""
+
+print(lyrics.lines.count)  // 4
