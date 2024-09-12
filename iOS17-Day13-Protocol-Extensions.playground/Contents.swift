@@ -24,4 +24,17 @@ if guests.isNotEmpty {
 }
 
 /// This is great but what about Sets, Dictionaries, Array etc conform to a protocol called Collection.
+/// Extending the protocol provides all conforming types with the same functionality and leads to Protocol Oriented Programming (POP).
+
+protocol Person {
+    var name: String { get }
+    func sayHello()
+}
+
+extension Person {
+    /// The function declaration below allows types to declare their own implementation or rely on this one by default.
+    func sayHello() {
+        print("Hi, I'm \(name)")
+    }
+}
 
