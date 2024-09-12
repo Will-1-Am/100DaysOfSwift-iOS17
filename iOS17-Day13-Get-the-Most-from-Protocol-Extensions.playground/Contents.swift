@@ -14,7 +14,7 @@ print(wholeNumber.squared())
 /// The Self keyword can help us here as the return type since it refers to the conforming type that we call this thing on.
 /// If we call this on an Int, it will return an Int and likewise for a Double.
 
-struct User: Equatable, Comparable {
+struct User: Comparable {
     let name: String
     
     static func <(lhs: User, rhs: User) -> Bool {
@@ -27,3 +27,7 @@ let user2 = User(name: "Zelda")
 print(user1 == user2)
 print(user1 != user2)
 print(user1 < user2)
+print(user1 <= user2)
+print(user1 > user2)
+print(user1 >= user2)
+
