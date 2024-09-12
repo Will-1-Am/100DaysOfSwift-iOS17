@@ -17,3 +17,9 @@ if guests.isEmpty == false {
 if !guests.isEmpty {
     print("Guest count: \(guests.count)")
 }
+
+/// Now we can write (which is arguably much more readable):
+if guests.isNotEmpty {
+    print("Guest count: \(guests.count)")
+}
+
