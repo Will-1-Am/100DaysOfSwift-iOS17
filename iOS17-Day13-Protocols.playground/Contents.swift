@@ -32,8 +32,9 @@ struct Car: Vehicle {
     }
 }
 
-/// Add the commute function as discussed above
-func commute(distance: Int, using vehicle: Car) {
+/// Add the commute function as discussed above.
+/// Changing the type to the protocol type definition allows the function call below to return the same result since the Car struct conforms to the protocol.
+func commute(distance: Int, using vehicle: Vehicle) {
     if vehicle.estimateTime(for: distance) > 100 {
         print("That's too slow! I'll try a different vehicle")
     } else {
