@@ -18,9 +18,12 @@ protocol Vehicle {
     func travel(distance: Int)
 }
 
+protocol CanBeElectric {
+    
+}
 
 /// Now we can design types that work with that protocol the process of which is called adopting or conforming to the protocol.  The protocol just specifies the bare minimum requirements
-struct Car: Vehicle {
+struct Car: Vehicle, CanBeElectric {  /// A struct can conform to multiple protocols
     var name = "Car"
     var currentPassengers = 1
     
