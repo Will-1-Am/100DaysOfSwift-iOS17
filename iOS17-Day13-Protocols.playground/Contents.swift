@@ -60,8 +60,17 @@ func commute(distance: Int, using vehicle: Vehicle) {
     }
 }
 
+func getTravelEstimates(using vehicles: [Vehicle], distance: Int) {
+    for vehicle in vehicles {
+        let estimate = vehicle.estimateTime(for: distance)
+        print("\(vehicle.name): \(estimate) hours to travel \(distance)km")
+    }
+}
+
 let car = Car()
 commute(distance: 100, using: car)
 
 let bike = Bicycle()
 commute(distance: 50, using: bike)
+
+getTravelEstimates(using: [car, bike], distance: 150)
