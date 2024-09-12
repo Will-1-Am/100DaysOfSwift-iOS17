@@ -51,6 +51,12 @@ struct Book {
     let title: String
     let pageCount: Int
     let readingHours: Int
+    
+    init(title: String, pageCount: Int) {
+        self.title = title
+        self.pageCount = pageCount
+        self.readingHours = pageCount / 50
+    }
 }
 
 let lotr = Book(title: "Lord of the Rings", pageCount: 1178, readingHours: 24)
