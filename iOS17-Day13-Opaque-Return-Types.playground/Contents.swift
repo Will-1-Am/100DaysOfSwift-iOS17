@@ -3,11 +3,11 @@ import Cocoa
 /// How to use opaque return types
 /// Opaque return types help us reduce complexity in our code.
 
-func getRandomNumber() -> Int {
+func getRandomNumber() -> some Equatable {
     Int.random(in: 1...6)
 }
 
-func getRandomBool() -> Bool {
+func getRandomBool() -> some Equatable {
     Bool.random()
 }
 
