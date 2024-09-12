@@ -13,3 +13,12 @@ print(wholeNumber.squared())
 /// However, this causes a problem since a Double squared cannot be an Int & vice versa.
 /// The Self keyword can help us here as the return type since it refers to the conforming type that we call this thing on.
 /// If we call this on an Int, it will return an Int and likewise for a Double.
+
+struct User: Equatable {
+    let name: String
+}
+
+let user1 = User(name: "Link")
+let user2 = User(name: "Zelda")
+print(user1 == user2)
+print(user1 != user2)
