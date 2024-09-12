@@ -38,3 +38,9 @@ extension Person {
     }
 }
 
+struct Employee: Person {
+    let name: String
+}
+
+let taylor = Employee(name: "Taylor Swift")
+taylor.sayHello()
