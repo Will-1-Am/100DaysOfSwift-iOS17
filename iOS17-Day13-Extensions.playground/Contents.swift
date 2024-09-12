@@ -45,3 +45,14 @@ Saying it's gonna be alright
 """
 
 print(lyrics.lines.count)  // 4
+
+
+struct Book {
+    let title: String
+    let pageCount: Int
+    let readingHours: Int
+}
+
+let lotr = Book(title: "Lord of the Rings", pageCount: 1178, readingHours: 24)
+
+/// The memberwise initializer will not be available if we write  a custom one for some custom logic
