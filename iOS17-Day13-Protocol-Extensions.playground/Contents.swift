@@ -2,7 +2,7 @@ import Cocoa
 
 /// How to create and use protocol extensions
 /// Protocol extensions extend functionality of protocols meaning that any types conforming to the protocol will automatically get the extended functionality.
-extension Array {
+extension Collection {
     var isNotEmpty: Bool {
         isEmpty == false
     }
@@ -22,4 +22,6 @@ if !guests.isEmpty {
 if guests.isNotEmpty {
     print("Guest count: \(guests.count)")
 }
+
+/// This is great but what about Sets, Dictionaries, Array etc conform to a protocol called Collection.
 
