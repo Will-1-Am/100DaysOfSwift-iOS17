@@ -21,6 +21,9 @@ protocol Vehicle {
 
 /// Now we can design types that work with that protocol the process of which is called adopting or conforming to the protocol.  The protocol just specifies the bare minimum requirements
 struct Car: Vehicle {
+    var name = "Car"
+    var currentPassengers = 1
+    
     func estimateTime(for distance: Int) -> Int {
         distance / 50
     }
@@ -35,6 +38,9 @@ struct Car: Vehicle {
 }
 
 struct Bicycle: Vehicle {
+    var name = "Bicycle"
+    var currentPassengers = 1
+    
     func estimateTime(for distance: Int) -> Int {
         distance / 10
     }
