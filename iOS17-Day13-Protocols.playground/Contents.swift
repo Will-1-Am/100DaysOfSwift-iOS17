@@ -32,6 +32,16 @@ struct Car: Vehicle {
     }
 }
 
+struct Bicycle: Vehicle {
+    func estimateTime(for distance: Int) -> Int {
+        distance / 10
+    }
+    
+    func travel(distance: Int) {
+        print("I'm cycling \(distance)km")
+    }
+}
+
 /// Add the commute function as discussed above.
 /// Changing the type to the protocol type definition allows the function call below to return the same result since the Car struct conforms to the protocol.
 func commute(distance: Int, using vehicle: Vehicle) {
@@ -44,3 +54,6 @@ func commute(distance: Int, using vehicle: Vehicle) {
 
 let car = Car()
 commute(distance: 100, using: car)
+
+let bike = Bicycle()
+commute(distance: 50, using: bike)
