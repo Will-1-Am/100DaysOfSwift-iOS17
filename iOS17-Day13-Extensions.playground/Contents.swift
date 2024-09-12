@@ -51,7 +51,14 @@ struct Book {
     let title: String
     let pageCount: Int
     let readingHours: Int
-    
+}
+
+let lotr = Book(title: "Lord of the Rings", pageCount: 1178, readingHours: 24)
+
+/// The memberwise initializer will not be available if we write a custom one for some custom logic.  However, there are some cases where it is desireable to have both.
+/// If we implement the custom initializer inside an extension, Swift won't disable the memberwise initializer.
+
+extension Book {
     init(title: String, pageCount: Int) {
         self.title = title
         self.pageCount = pageCount
@@ -59,6 +66,5 @@ struct Book {
     }
 }
 
-let lotr = Book(title: "Lord of the Rings", pageCount: 1178, readingHours: 24)
-
-/// The memberwise initializer will not be available if we write  a custom one for some custom logic
+let newBook = Book(title: "1984", pageCount: 566)
+newBook.readingHours
