@@ -31,3 +31,15 @@ struct Car: Vehicle {
         print("It's a nice day!")
     }
 }
+
+/// Add the commute function as discussed above
+func commute(distance: Int, using vehicle: Car) {
+    if vehicle.estimateTime(for: distance) > 100 {
+        print("That's too slow! I'll try a different vehicle")
+    } else {
+        vehicle.travel(distance: distance)
+    }
+}
+
+let car = Car()
+commute(distance: 100, using: car)
