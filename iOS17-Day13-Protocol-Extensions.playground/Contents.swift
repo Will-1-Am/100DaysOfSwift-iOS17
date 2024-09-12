@@ -44,3 +44,48 @@ struct Employee: Person {
 
 let taylor = Employee(name: "Taylor Swift")
 taylor.sayHello()
+
+/// Checkpoint 8
+/// Create a protocol that describes a building including:
+///  - a property storing how many rooms it has;
+///  - the cost as an integer;
+///  - string storing the name of the estate agent selling the building;
+///  - a method for printing the sales summary of the building
+///  - create two structs House & Office that conform to building protocol
+///
+
+protocol Building {
+    var rooms: Int { get }
+    var cost: Int { get }
+    var estateAgent: String { get }
+    func salesSummary() -> Void
+}
+
+extension Building {
+    func salesSummary() {
+        print("The building costs £\(cost) has \(rooms) rooms and is being sold by \(estateAgent).")
+    }
+}
+
+struct House: Building {
+    var rooms: Int
+    
+    var cost: Int
+    
+    var estateAgent: String
+}
+
+let house = House(rooms: 6, cost: 250_000, estateAgent: "Frankels Estate Agents")
+house.salesSummary()
+
+
+struct Office: Building {
+    var rooms: Int
+    
+    var cost: Int
+    
+    var estateAgent: String
+}
+
+let office = Office(rooms: 250, cost: 5_000_000, estateAgent: "Zircas Properties")
+office.salesSummary()
