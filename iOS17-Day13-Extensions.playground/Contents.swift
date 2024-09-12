@@ -23,11 +23,3 @@ let trimmed2 = quote.trimmed()
 /// 1. Code completion;
 /// 2. Code organization;
 /// 3. Internal access;
-
-extension String {
-    mutating func trim() {  /// mutating is required here because it applies the result to self (the current string instance)
-        self = self.trimmed()
-    }
-}
-
-quote.trim()
