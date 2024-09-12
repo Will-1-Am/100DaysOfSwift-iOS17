@@ -16,3 +16,18 @@ protocol Vehicle {
     func travel(distance: Int)
 }
 
+
+/// Now we can design types that work with that protocol the process of which is called adopting or conforming to the protocol.  The protocol just specifies the bare minimum requirements
+struct Car: Vehicle {
+    func estimateTime(for distance: Int) -> Int {
+        distance / 50
+    }
+    
+    func travel(distance: Int) {
+        print("I'm driving \(distance)km")
+    }
+    
+    func openSunroof() {
+        print("It's a nice day!")
+    }
+}
