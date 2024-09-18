@@ -24,3 +24,10 @@ if let unwrappedName = username {
 } else {
     print("The optional was empty.")
 }
+
+func square(number: Int) -> Int {
+    number * number
+}
+
+var num: Int? = nil
+square(number: num)
