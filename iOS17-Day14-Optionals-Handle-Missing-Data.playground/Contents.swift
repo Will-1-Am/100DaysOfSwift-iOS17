@@ -16,3 +16,11 @@ if let marioOpposite = opposites["Mario"] {
     print("Mario opposite is \(marioOpposite)")
 }
 /// The above is called unwrapping.
+
+/// An else clause can also be added.
+var username: String? = nil
+if let unwrappedName = username {
+    print("We got a user: \(unwrappedName)")
+} else {
+    print("The optional was empty.")
+}
