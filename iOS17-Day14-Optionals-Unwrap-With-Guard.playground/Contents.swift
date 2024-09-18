@@ -19,6 +19,9 @@ if let unwrapped = myVar {
     /// Run if myVar has a value inside
 }
 
-guard let unwrapped = myVar else {
+//guard let unwrapped = myVar else {
     /// Run if myVar doesn't have a value inside
-}
+//}
+
+/// Swift requires you to use return if a guard check fails;
+/// If the optional you're unwrapping has a value, you can use it after the guard code finishes;
