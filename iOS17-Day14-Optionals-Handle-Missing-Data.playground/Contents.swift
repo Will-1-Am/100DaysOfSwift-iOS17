@@ -31,7 +31,7 @@ func square(number: Int) -> Int {
 
 var num: Int? = nil
 
-if let unwrappedNum = num {
-    print(square(number: unwrappedNum))
+if let num = num {
+    print(square(number: num))
 }
 
