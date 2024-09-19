@@ -8,6 +8,7 @@ let captains = [
     "Defiant": "Sisko"
 ]
 
-let new = captains["Serenity"]
-print(type(of: new))  // Optional<String>
+let new = captains["Serenity"] ?? "N/A"
+print(type(of: new))  // Optional<String> w/o ??  String with ?? "N/A"
+/// If there was a value assigned to the key, it would be returned instead.
 
