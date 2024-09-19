@@ -16,3 +16,12 @@ print(type(of: new))  // Optional<String> w/o ??  String with ?? "N/A"
 let tvShows = ["Archers", "Babylon 5", "Ted Lasso"]
 let favorite = tvShows.randomElement() ?? "None"  ///The randomElement method will return an optional string if one exists
 
+///A property within a struct could also make use of nil coalescing
+struct Book {
+    let title: String
+    let author: String?
+}
+
+let book = Book(title: "Beowolf", author: nil)
+let author = book.author ?? "Anonymous"
+print(author)
