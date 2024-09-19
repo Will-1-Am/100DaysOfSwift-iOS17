@@ -25,3 +25,8 @@ struct Book {
 let book = Book(title: "Beowolf", author: nil)
 let author = book.author ?? "Anonymous"
 print(author)
+
+///Convert a string to an integer where nil-coalescing ensures a value
+let input = ""
+let number = Int(input) ?? 0
+print(number)
