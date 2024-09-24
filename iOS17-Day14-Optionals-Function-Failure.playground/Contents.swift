@@ -17,3 +17,14 @@ if let user = try? getUser(id: 23) {
 
 let user = (try? getUser(id: 23)) ?? "Anonymous"
 print(user)
+
+///Checkpoint 9
+///- Write a function that accepts an optional array of integers, and returns one of those integers randomly;
+/// - If the array is missing or empty, return a new random number in the range 1 through 100;
+/// - Write your function in a single line of code;
+
+func getRandElement(from array: [Int]?) -> Int {
+    array?.randomElement() ?? Int.random(in: 1...100)
+}
+
+getRandElement(from: [1, 2, 3])
