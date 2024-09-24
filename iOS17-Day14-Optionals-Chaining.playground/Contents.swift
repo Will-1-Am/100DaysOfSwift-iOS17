@@ -4,6 +4,7 @@ import Cocoa
 /// Optional chaining is a simplified syntax for reading optionals inside optionals
 let names = ["Arya", "Bran", "Robb", "Sansa"]
 let chosen = names.randomElement()?.uppercased() ?? "No one"
+let lengthOfLast = names.first?.appending(" a string")
 print("Next in line: \(chosen)")
 /// The assignment to chosen says, pick a randomElement, unwrap it and change it to uppercase. If it's nil assign "No one".
 
