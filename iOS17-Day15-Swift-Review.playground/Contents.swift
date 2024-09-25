@@ -7,3 +7,11 @@ let quote = "He tapped a sign saying \"Beleive\" and walked away."
 /// Toggle a boolean value
 var skyIsBlue = false
 skyIsBlue.toggle()
+
+///Set a default value when reading dictionary keys
+let employee = [
+    "name": "Taylor",
+    "job": "Singer",
+]
+
+employee["job", default: "Unknown"]
