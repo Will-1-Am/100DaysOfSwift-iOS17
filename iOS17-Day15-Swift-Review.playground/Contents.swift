@@ -15,3 +15,8 @@ let employee = [
 ]
 
 employee["job", default: "Unknown"]
+
+/// Contains method runs almost instantaneously on Sets
+var mySet = Set([1, 1, 3, 5, 7, 9])
+mySet.insert(30)  /// insert is used instead of append since there is no order to append to.
+mySet.contains(11)
