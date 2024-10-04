@@ -14,6 +14,9 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world! \n\nForms can hold any kind of content.")
+            Text("Hello, world!")
+            
+            Text("Hello, world!")
         }
     }
 }
