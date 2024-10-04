@@ -9,29 +9,34 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Form {
-            Section {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                Text("Hello, world! \n\nForms can hold any kind of content.")
+        
+        NavigationStack {
+            Form {
+                Section {
+                    Image(systemName: "globe")
+                        .imageScale(.large)
+                        .foregroundStyle(.tint)
+                    Text("Hello, world! \n\nForms can hold any kind of content.")
+                }
+                Section {
+                    Text("Hello, world!")
+                    Text("Hello, world!")
+                    Text("Hello, world!")
+                }
+                Section {
+                    Text("Hello, world!")
+                    Text("Hello, world!")
+                    Text("Hello, world!")
+                }
+                Section {
+                    Text("Hello, world!")
+                    Text("Hello, world!")
+                    Text("Hello, world!")
+                    Text("Hello, world!")
+                }
             }
-            Section {
-                Text("Hello, world!")
-                Text("Hello, world!")
-                Text("Hello, world!")
-            }
-            Section {
-                Text("Hello, world!")
-                Text("Hello, world!")
-                Text("Hello, world!")
-            }
-            Section {
-                Text("Hello, world!")
-                Text("Hello, world!")
-                Text("Hello, world!")
-                Text("Hello, world!")
-            }
+            .navigationTitle("SwiftUI")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
