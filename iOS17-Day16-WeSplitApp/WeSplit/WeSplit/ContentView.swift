@@ -15,7 +15,7 @@ struct ContentView: View {
         NavigationStack {
             Form {
                 Picker("Select your student", selection: $selectedStudent) {
-                    ForEach(students, id: \.self) {
+                    ForEach(students, id: \.self) {  /// The id is used to identify each element uniquely
                         Text($0)
                     }
                 }
