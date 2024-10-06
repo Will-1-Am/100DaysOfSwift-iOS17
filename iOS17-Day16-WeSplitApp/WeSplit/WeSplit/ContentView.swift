@@ -12,12 +12,15 @@ struct ContentView: View {
     @State private var selectedStudent = "Harry"
     
     var body: some View {
-        Form {
-            Picker("Select your student", selection: $selectedStudent) {
-                ForEach(students, id: \.self) {
-                    Text($0)
+        NavigationStack {
+            Form {
+                Picker("Select your student", selection: $selectedStudent) {
+                    ForEach(students, id: \.self) {
+                        Text($0)
+                    }
                 }
             }
+            .navigationTitle("Select a Student")
         }
     }
 }
