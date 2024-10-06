@@ -20,6 +20,9 @@ struct ContentView: View {
             Section {
                 TextField("Enter the amount of the cheque", value: $chequeAmount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
             }
+            Section {///The following text feild simply reflects the value stored in the variable as it is stored.
+                Text(chequeAmount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+            }
         }
     }
 }
