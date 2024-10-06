@@ -13,8 +13,10 @@ struct ContentView: View {
     
     var body: some View {
         Form {
-            ForEach(students, id: \.self) {
-                Text($0)
+            Picker("Select your student", selection: $selectedStudent) {
+                ForEach(students, id: \.self) {
+                    Text($0)
+                }
             }
         }
     }
