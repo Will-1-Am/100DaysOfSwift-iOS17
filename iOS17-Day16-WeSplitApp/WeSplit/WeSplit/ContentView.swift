@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var name = ""
+    let students = ["Harry", "Hermione", "Ron", "Draco"]
+    @State private var selectedStudent = "Harry"
     
     var body: some View {
         Form {
-            ForEach(100..<200) {
-                Text("Row \($0)")
+            ForEach(students, id: \.self) {
+                Text($0)
             }
         }
     }
