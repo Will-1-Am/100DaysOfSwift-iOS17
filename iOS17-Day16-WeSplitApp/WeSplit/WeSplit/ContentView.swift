@@ -35,6 +35,7 @@ struct ContentView: View {
                             Text($0, format: .percent)
                         }
                     }
+                    .pickerStyle(.segmented)
                 }
                 Section {///The following text feild simply reflects the value stored in the variable as it is stored.
                     Text(chequeAmount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
