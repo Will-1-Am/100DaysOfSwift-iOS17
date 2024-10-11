@@ -22,7 +22,7 @@ struct ContentView: View {
         let tipValue = chequeAmount * tipSelection / 100
         let grandTotal = chequeAmount + tipValue
         let amountPerPerson = grandTotal / peopleCount
-        return 0
+        return amountPerPerson
     }
     
     var body: some View {
@@ -48,7 +48,7 @@ struct ContentView: View {
                     .pickerStyle(.segmented)
                 }
                 Section {///The following text feild simply reflects the value stored in the variable as it is stored.
-                    Text(chequeAmount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                    Text(totalPerPerson, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
                 }
             }
             .navigationTitle("WeSplit")
