@@ -29,7 +29,7 @@ struct ContentView: View {
                     .pickerStyle(.navigationLink)
                 }
                 
-                Section {
+                Section ("How much would you like to tip?") {
                     Picker("Tip percentage", selection: $tipPercentage) {
                         ForEach(tipPercentages, id: \.self) {
                             Text($0, format: .percent)
