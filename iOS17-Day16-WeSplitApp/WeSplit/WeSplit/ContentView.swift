@@ -18,7 +18,7 @@ struct ContentView: View {
     var totalPerPerson: Double {
         /// Calculate the portion of the bill for each person to pay
         let peopleCount = Double(numberOfPeople + 2)
-        
+        let tipSelection = Double(tipPercentage)
         return 0
     }
     
