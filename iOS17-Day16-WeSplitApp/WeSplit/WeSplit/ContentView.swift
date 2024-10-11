@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var chequeAmount = 0.0
     @State private var numberOfPeople = 2
     @State private var tipPercentage = 20
+    @FocusState private var amountIsFocused: Bool
     
     /// The following array will allow people to tip at different rates
     let tipPercentages = [10, 15, 20, 25, 0]
