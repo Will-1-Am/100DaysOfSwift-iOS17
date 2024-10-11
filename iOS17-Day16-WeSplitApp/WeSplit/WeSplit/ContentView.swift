@@ -28,6 +28,14 @@ struct ContentView: View {
                     }
                     .pickerStyle(.navigationLink)
                 }
+                
+                Section {
+                    Picker("Tip percentage", selection: $tipPercentage) {
+                        ForEach(tipPercentages, id: \.self) {
+                            Text($0, format: .percent)
+                        }
+                    }
+                }
                 Section {///The following text feild simply reflects the value stored in the variable as it is stored.
                     Text(chequeAmount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
                 }
