@@ -32,6 +32,7 @@ struct ContentView: View {
                     Text(chequeAmount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
                 }
             }
+            .navigationTitle("WeSplit")
         }
     }
 }
