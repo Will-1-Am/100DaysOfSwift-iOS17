@@ -15,6 +15,11 @@ struct ContentView: View {
     /// The following array will allow people to tip at different rates
     let tipPercentages = [10, 15, 20, 25, 0]
     
+    var totalPerPerson: Double {
+        /// Calculate the portion of the bill for each person to pay
+        return 0
+    }
+    
     var body: some View {
         NavigationStack {
             Form {
