@@ -11,11 +11,12 @@ struct ContentView: View {
     @State private var inputValue = 0.0
     
     var body: some View {
-        VStack {
+        Section {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            TextField("Enter a value", value: $inputValue, format: .number)
+                .keyboardType(.numberPad)
         }
         .padding()
     }
