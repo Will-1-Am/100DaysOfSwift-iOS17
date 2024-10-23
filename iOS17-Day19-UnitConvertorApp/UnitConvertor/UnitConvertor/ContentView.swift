@@ -11,13 +11,15 @@ struct ContentView: View {
     @State private var inputValue = 0.0
     
     var body: some View {
-        Form {
-            Section {
-                TextField("Enter a value", value: $inputValue, format: .number)
-                    .keyboardType(.numberPad)
+        NavigationStack{
+            Form {
+                Section {
+                    TextField("Enter a value", value: $inputValue, format: .number)
+                        .keyboardType(.numberPad)
+                }
             }
+            .navigationTitle("Convert units")
         }
-
     }
 }
 
