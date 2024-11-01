@@ -28,6 +28,7 @@ struct ContentView: View {
                         }
                     }
                     
+                    Text("\(inputValue) \(inputUnit.symbol)")
                 }
             }
             .navigationTitle("Convert units")
