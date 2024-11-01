@@ -17,8 +17,17 @@ struct ContentView: View {
         NavigationStack{
             Form {
                 Section {
-                    TextField("Enter a value", value: $inputValue, format: .number)
-                        .keyboardType(.numberPad)
+                    HStack {
+                        TextField("Enter a value", value: $inputValue, format: .number)
+                            .keyboardType(.numberPad)
+                        Picker("Select a unit", selection: $inputUnit) {
+                            ForEach(temperatureUnits, id: \.self) { unit in
+                                Text(unit.symbol)
+                                    .tag(unit)
+                            }
+                        }
+                    }
+                    
                 }
             }
             .navigationTitle("Convert units")
