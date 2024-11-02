@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var inputValue = 0.0
-    @State private var inputUnit: UnitTemperature = .kelvin
+    @State private var inputUnit: UnitTemperature = .celsius
+    @State private var outputUnit: UnitTemperature = .fahrenheit
+    var outputValue: Double {
+        let temperature = Measurement(value: inputValue, unit: inputUnit)
+        return temperature.converted(to: outputUnit).value
+    }
     
     let temperatureUnits: [UnitTemperature] = [.celsius, .kelvin, .fahrenheit]
     
