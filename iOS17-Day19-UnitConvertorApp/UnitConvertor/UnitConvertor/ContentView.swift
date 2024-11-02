@@ -32,8 +32,6 @@ struct ContentView: View {
                             }
                         }.pickerStyle(.segmented)
                     }
-                    
-                    Text("\(inputValue) \(inputUnit.symbol)")
                 }
                 
                 Section {
