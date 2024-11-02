@@ -16,7 +16,7 @@ struct ContentView: View {
         return temperature.converted(to: outputUnit).value
     }
     
-    let temperatureUnits: [UnitTemperature] = [.celsius, .kelvin, .fahrenheit]
+    let temperatureUnits: [UnitTemperature] = [.celsius, .fahrenheit, .kelvin]
     
     var body: some View {
         NavigationStack{
