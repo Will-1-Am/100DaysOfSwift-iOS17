@@ -21,7 +21,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             Form {
-                Section {
+                Section ("Value & Unit you wish to convert:") {
                     HStack {
                         TextField("Enter a value", value: $inputValue, format: .number)
                             .keyboardType(.numberPad)
@@ -30,7 +30,7 @@ struct ContentView: View {
                                 Text(unit.symbol)
                                     .tag(unit)
                             }
-                        }
+                        }.pickerStyle(.segmented)
                     }
                     
                     Text("\(inputValue) \(inputUnit.symbol)")
