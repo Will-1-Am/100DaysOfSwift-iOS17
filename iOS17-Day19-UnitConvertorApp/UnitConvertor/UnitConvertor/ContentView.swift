@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var inputValue = 0.0
+    @State private var inputValue = 100.0
     @State private var inputUnit: UnitTemperature = .celsius
     @State private var outputUnit: UnitTemperature = .fahrenheit
     var outputValue: Double {
@@ -34,7 +34,7 @@ struct ContentView: View {
                     }
                 }
                 
-                Section {
+                Section ("Choose the new unit:") {
                     Picker("Select a unit", selection: $outputUnit) {
                         ForEach(temperatureUnits, id: \.self) { unit in
                             Text(unit.symbol)
