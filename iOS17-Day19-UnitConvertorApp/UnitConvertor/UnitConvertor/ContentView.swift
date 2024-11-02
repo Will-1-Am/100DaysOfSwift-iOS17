@@ -35,6 +35,24 @@ struct ContentView: View {
                     
                     Text("\(inputValue) \(inputUnit.symbol)")
                 }
+                
+                Section {
+                    Picker("Select a unit", selection: $outputUnit) {
+                        ForEach(temperatureUnits, id: \.self) { unit in
+                            Text(unit.symbol)
+                                .tag(unit)
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                }
+                
+                Section ("The equivalent value is:"){
+                    HStack {
+                        Text("\(inputValue) \(inputUnit.symbol)")
+                        Text(" = ")
+                        Text("\(outputValue) \(outputUnit.symbol)")
+                    }
+                }
             }
             .navigationTitle("Convert units")
         }
